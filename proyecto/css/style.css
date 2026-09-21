@@ -1,0 +1,55 @@
+
+
+.carrusel-principal {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto 60px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.carrusel-principal .carousel-inner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+/* Accesos principales */
+
+.tech-container a {
+  text-decoration: none;
+}
+
+.tech-container a:hover {
+  text-decoration: none;
+  color: #1b5e20;
+}
+
+
+/* Footer */
+
+footer.seccion {
+  margin-top: 60px;
+  padding: 25px;
+  background-color: #1b5e20;
+  color: #ffffff;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .carrusel-principal {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+  }
+
+  .carrusel-principal .carousel-inner img {
+    height: 280px;
+  }
+
+}

@@ -69,10 +69,15 @@ body {
   transition: 200ms ease;
 }
 
+/*------------Text Interaccion------------*/
+
+.text-interaction :hover{
+  
+  transition: 100ms ease;
+}
 
 
 /*------------Config Carrusel------------*/
-
 
 
 .carrusel-principal {

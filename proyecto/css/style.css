@@ -1,3 +1,16 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* CONTENEDOR DE LAS CAJAS */
 .container-box {
   display: grid;
@@ -58,6 +71,9 @@
 
 
 /*------------Config Carrusel------------*/
+
+
+
 .carrusel-principal {
   width: 90%;
   max-width: 1100px;

@@ -1,0 +1,281 @@
+
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Reserva online - Destino Cordillera</title>
+
+  <!-- Bootstrap 3 -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <!-- CSS del sitio -->
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+
+
+  <!-- ===================== NAV BAR ===================== -->
+
+  <nav class="navbar navbar-default">
+
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <button type="button"
+          class="navbar-toggle collapsed"
+          data-toggle="collapse"
+          data-target="#menu-principal"
+          aria-expanded="false">
+
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </button>
+
+        <a class="navbar-brand" href="index.html">
+          Destino Cordillera
+        </a>
+
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="menu-principal">
+
+        <ul class="nav navbar-nav">
+
+          <li>
+            <a href="index.html">
+              Inicio
+            </a>
+          </li>
+
+
+          <li class="dropdown active">
+
+            <a href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false">
+
+              Destinos <span class="caret"></span>
+
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li>
+                <a href="contenidos.html">
+                  Lugares de interés
+                </a>
+              </li>
+
+              <li>
+                <a href="actividades.html">
+                  Actividades
+                </a>
+              </li>
+
+            </ul>
+
+          </li>
+
+
+          <li>
+            <a href="informacion.html">
+              Información
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ===================== CONTENIDO ===================== -->
+
+  <div class="container text-center seccion">
+
+
+
+    <h1>
+      <strong>
+        Reservas
+      </strong>
+    </h1>
+
+
+
+    <p class="texto-descripcion">
+      Realiza tu reserva para disfrutar de las actividades en Destino Cordillera. Completa el formulario con tus datos y selecciona la actividad que deseas realizar.
+    </p>
+
+
+    <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+
+    <div class="container seccion">
+        
+
+
+    <!-- ===================== ACCESOS ===================== -->
+    
+    <div class = 'row'>
+        <div class "col-sm-8 col-sm-offset-2">
+            <div class="panel panel-default panel-fortaleza">
+              <form onsubmit="mostrarMensajeConfirmacion(event);"> 
+                <div class="panel-body"> 
+                    <h2 class="text-center">
+                        <strong>Datos de la reserva</strong>
+                    </h2>
+                    <br>
+                    <div class="form-group">
+                        <label for="actividad">Actividad</label>
+                        <select class="form-control" id="actividad">
+                            <option value="">Selecciona una actividad</option>
+                            <option value="senderismo">Senderismo</option>
+                            <option value="escalada">Escalada</option>
+                            <option value="Mirador">Mirador</option>
+                            <option value="Camping">Camping</option> 
+                        </select>   
+                    </div>
+                    <div class="form-group">
+                        <label for="Fecha">Fecha</label>
+                        <input type="date" class="form-control" id="fecha" name ="fecha" required>   
+                    </div>
+                    <div class="form-group">
+                        <label for="Cantidad de personas">Cantidad de personas</label>
+                        <input type="number" class="form-control" id="personas" name ="personas" min="1" max="20" placeholder="Ej: 3" required>
+                    </div>
+                    <hr>
+                    <h1 class="text-center">
+                        <strong>Datos del visitante</strong>
+                    </h1>
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name ="nombre" placeholder="Ej: Juan Pérez" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Correo electrónico">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" name ="correo" placeholder="Ej: juan.perez@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Teléfono">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name ="telefono" placeholder="Ej: +56912345678" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Comentarios">Comentarios</label>
+                        <textarea class="form-control" id="comentarios" name ="comentarios" rows="3" placeholder="Escribe aquí tus comentarios o solicitudes especiales"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar reserva</button>
+                    </div>
+                    
+
+                    <div id="mensaje-confirmacion" class="alert alert-success text-center" style="display: none; margin-top: 20px;">
+                        ¡Reserva enviada con éxito! Recibirás un correo de confirmación.
+                    </div>
+                </div>
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <h2>
+      <strong>
+        ¿Tienes preguntas o necesitas ayuda con tu reserva?
+      </strong>
+    </h2>
+
+    <h3>
+      <strong>
+        Contáctanos
+      </strong>
+    </h3>
+
+    <p>
+      Nuestro correo electrónico: <a href="mailto:info@destinocordillera.com">info@destinocordillera.com</a> 
+      Nuestra dirección física es: Calle Principal 123, Ciudad Cordillera. 
+      También puedes llamarnos al número de teléfono: +56 9 1234 5678. 
+      Estamos disponibles de lunes a viernes de 9:00 a 18:00 horas para responder a tus consultas y brindarte la asistencia que necesites.
+    </p>
+
+
+    <!-- ===================== ACCESOS ===================== -->
+
+    <h2>
+      <strong>
+        Explora Destino Cordillera
+      </strong>
+    </h2>
+
+    <div class="tech-container">
+
+      <a href="index.html" class="tech-tag">
+        Inicio
+      </a>
+
+      <a href="contenidos.html" class="tech-tag">
+        Lugares de interés
+      </a>
+
+      <a href="actividades.html" class="tech-tag">
+        Actividades
+      </a>
+
+      <a href="informacion.html" class="tech-tag">
+        Información
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- ===================== FOOTER ===================== -->
+
+  <footer class="seccion">
+
+    <p>
+      Destino Cordillera
+    </p>
+
+  </footer>
+
+
+  <!-- ===================== SCRIPTS ===================== -->
+
+  <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+  </script>
+
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+  </script>
+
+  <script>
+    function mostrarMensajeConfirmacion(event) {
+
+      event.preventDefault(); // para que no se recarge al enviar 
+      document.getElementById('mensaje-confirmacion').style.display = 'block';
+
+    }
+  </script>
+
+
+</body>
+
+</html>
+

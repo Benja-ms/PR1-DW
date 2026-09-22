@@ -1,3 +1,23 @@
+.container-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  justify-content: center;
+  gap: 10px;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.image-box {
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-box {
+  text-align: center;
+}
 
 
 .carrusel-principal {
@@ -51,5 +71,7 @@ footer.seccion {
   .carrusel-principal .carousel-inner img {
     height: 280px;
   }
+
+
 
 }

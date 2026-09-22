@@ -1,25 +1,63 @@
+/* CONTENEDOR DE LAS CAJAS */
 .container-box {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
 }
-
+/* REPISA EN DONDE SE COLOCA LA INFORMACION */
 .item-box {
+  position: relative;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+/* REPISA EN DONDE SE COLOCA LA INFORMACION */
 .image-box {
   height: auto;
   border-radius: 10px;
 }
 
-.text-box {
-  text-align: center;
+/* TEXTO ENCIMA DE IMAGEN */
+.text-box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  color: #ffffff;
+  opacity: 0;
+  
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*------------REPISA HOVER------------*/
+
+.item-box :hover{
+  z-index: 1;
+  transform: translateY(-5px);
+  transition: 100ms ease;
+}
+
+.item-box:hover .image-box {
+  transform: scale(1.03);
+}
+
+.item-box:hover .text-box {
+  z-index: 2;
+  opacity: 1;
+  transition: 200ms ease;
 }
 
 
+
+/*------------Config Carrusel------------*/
 .carrusel-principal {
   width: 90%;
   max-width: 1100px;

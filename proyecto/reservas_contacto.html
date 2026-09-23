@@ -97,73 +97,206 @@
     </p>
 
 
-    <!-- ===================== CONTENIDO PRINCIPAL ===================== -->
+    <!-- ============================= CONTENIDO PRINCIPAL ===================== -->
 
     <div class="container seccion">
-        
-
-
-    <!-- ===================== ACCESOS ===================== -->
-    
-    <div class = 'row'>
+      <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <div class="panel panel-default panel-fortaleza">
-              <form onsubmit="mostrarMensajeConfirmacion(event);"> 
-                <div class="panel-body"> 
-                    <h2 class="text-center">
-                        <strong>Datos de la reserva</strong>
-                    </h2>
-                    <br>
-                    <div class="form-group">
-                        <label for="actividad">Actividad</label>
-                        <select class="form-control" id="actividad">
-                            <option  value="">Selecciona una actividad</option>
-                            <option value="senderismo">Senderismo</option>
-                            <option value="escalada">Escalada</option>
-                            <option value="Mirador">Mirador</option>
-                            <option value="Camping">Camping</option> 
-                        </select>   
-                    </div>
-                    <div class="form-group">
-                        <label for="Fecha">Fecha</label>
-                        <input type="date" class="form-control" id="fecha" name ="fecha" required>   
-                    </div>
-                    <div class="form-group">
-                        <label for="Cantidad de personas">Cantidad de personas</label>
-                        <input type="number" class="form-control" id="personas" name ="personas" min="1" max="20" placeholder="Ej: 3" required>
-                    </div>
-                    <hr>
-                    <h1 class="text-center">
-                        <strong>Datos del visitante</strong>
-                    </h1>
-                    <div class="form-group">
-                        <label for="Nombre">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" name ="nombre" placeholder="Ej: Juan Pérez" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Correo electrónico">Correo electrónico</label>
-                        <input type="email" class="form-control" id="correo" name ="correo" placeholder="Ej: juan.perez@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Teléfono">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono" name ="telefono" placeholder="Ej: +56912345678" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Comentarios">Comentarios</label>
-                        <textarea class="form-control" id="comentarios" name ="comentarios" rows="3" placeholder="Escribe aquí tus comentarios o solicitudes especiales"></textarea>
-                    </div>
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Enviar reserva</button>
-                    </div>
-                    
 
-                    <div id="mensaje-confirmacion" class="alert alert-success text-center" style="display: none; margin-top: 20px;">
-                        ¡Reserva enviada con éxito! Recibirás un correo de confirmación.
-                    </div>
+          <div class="panel panel-default panel-fortaleza">
+            <form onsubmit="mostrarMensajeConfirmacion(event)">
+
+              <div class="panel-body">
+
+                <h2 class="text-center">
+                  <strong>Datos de la reserva</strong>
+                </h2>
+
+                <br>
+
+                <!-- Tipo de reserva -->
+                <div class="form-group">
+                  <label for="tipo-reserva">¿Qué deseas reservar?</label>
+
+                  <select
+                    class="form-control"
+                    id="tipo-reserva"
+                    name="tipo-reserva"
+                    required
+                  >
+                    <option value="">Selecciona una opción</option>
+                    <option value="actividad">Una actividad</option>
+                    <option value="alojamiento">Un alojamiento</option>
+                  </select>
                 </div>
-              </form>
-            </div>
+
+                <!-- Reserva de actividad -->
+                <div id="reserva-actividad" style="display: none;">
+
+                  <div class="form-group">
+                    <label for="actividad">Actividad</label>
+
+                    <select
+                      class="form-control"
+                      id="actividad"
+                      name="actividad"
+                    >
+                      <option value="">Selecciona una actividad</option>
+                      <option value="senderismo">Senderismo</option>
+                      <option value="escalada">Escalada</option>
+                      <option value="mirador">Mirador</option>
+                      <option value="camping">Camping</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fecha-actividad">Fecha de la actividad</label>
+
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="fecha-actividad"
+                      name="fecha-actividad"
+                    >
+                  </div>
+
+                </div>
+
+                <!-- Reserva de alojamiento -->
+                <div id="reserva-alojamiento" style="display: none;">
+
+                  <div class="form-group">
+                    <label for="alojamiento">Alojamiento</label>
+
+                    <select
+                      class="form-control"
+                      id="alojamiento"
+                      name="alojamiento"
+                    >
+                      <option value="">Selecciona un alojamiento</option>
+                      <option value="cabana">Cabañas Valle Escondido</option>
+                      <option value="refugio">Refugio Cumbres Altas</option>
+                      <option value="camping">Camping Río Blanco</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fecha-entrada">Fecha de llegada</label>
+
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="fecha-entrada"
+                      name="fecha-entrada"
+                    >
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fecha-salida">Fecha de salida</label>
+
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="fecha-salida"
+                      name="fecha-salida"
+                    >
+                  </div>
+
+                </div>
+
+                <!-- Campo común -->
+                <div class="form-group">
+                  <label for="personas">Cantidad de personas</label>
+
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="personas"
+                    name="personas"
+                    min="1"
+                    max="20"
+                    placeholder="Ej: 3"
+                    required
+                  >
+                </div>
+
+                <hr>
+
+                <h2 class="text-center">
+                  <strong>Datos del visitante</strong>
+                </h2>
+
+                <div class="form-group">
+                  <label for="nombre">Nombre completo</label>
+
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Ej: Juan Pérez"
+                    required
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="correo">Correo electrónico</label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="correo"
+                    name="correo"
+                    placeholder="Ej: juan.perez@example.com"
+                    required
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="telefono">Teléfono</label>
+
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    name="telefono"
+                    placeholder="Ej: +56 9 1234 5678"
+                    required
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label for="comentarios">Comentarios</label>
+
+                  <textarea
+                    class="form-control"
+                    id="comentarios"
+                    name="comentarios"
+                    rows="3"
+                    placeholder="Escribe aquí tus comentarios o solicitudes especiales"
+                  ></textarea>
+                </div>
+
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">
+                    Enviar reserva
+                  </button>
+                </div>
+
+                <div
+                  id="mensaje-confirmacion"
+                  class="alert alert-success text-center"
+                  style="display: none; margin-top: 20px;"
+                >
+                  ¡Reserva enviada correctamente! Recibirás un correo de confirmación.
+                </div>
+
+              </div>
+            </form>
+          </div>
+
         </div>
+      </div>
     </div>
 
     <h2>
@@ -234,7 +367,42 @@
 
     }
   </script>
+  <script>
+  const tipoReserva = document.getElementById('tipo-reserva');
+  const reservaActividad = document.getElementById('reserva-actividad');
+  const reservaAlojamiento = document.getElementById('reserva-alojamiento');
 
+  tipoReserva.addEventListener('change', function () {
+    if (this.value === 'actividad') {
+      reservaActividad.style.display = 'block';
+      reservaAlojamiento.style.display = 'none';
+
+      document.getElementById('actividad').required = true;
+      document.getElementById('alojamiento').required = false;
+      document.getElementById('fecha-salida').required = false;
+    }
+
+    else if (this.value === 'alojamiento') {
+      reservaActividad.style.display = 'none';
+      reservaAlojamiento.style.display = 'block';
+
+      document.getElementById('actividad').required = false;
+      document.getElementById('alojamiento').required = true;
+      document.getElementById('fecha-salida').required = true;
+    }
+
+    else {
+      reservaActividad.style.display = 'none';
+      reservaAlojamiento.style.display = 'none';
+    }
+  });
+
+  function mostrarMensajeConfirmacion(event) {
+    event.preventDefault();
+
+    document.getElementById('mensaje-confirmacion').style.display = 'block';
+  }
+</script>
 
 </body>
 

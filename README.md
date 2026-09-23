@@ -23,9 +23,13 @@ Distribución de responsabilidades de cada integrante
         -Correcciones e inconsistencias entre paginas
         -Responsividad en CSS
 
-    Benjamin Mardonez:
-        -Fundacion de Bases del Github
-        -Creacion de Index junto con el estilo y funcionalidad inicial
+    Benjamín Mardones
+    
+        -Creación y refactorización de index.html.
+        -Desarrollo inicial de la hoja de estilos style.css.
+        -Creación y desarrollo de reservas_contacto.html.
+        -Configuración de la tipografía utilizada en el proyecto.
+        -Creación de la página de informacion.html.
 
     Jesus Peña:
         -

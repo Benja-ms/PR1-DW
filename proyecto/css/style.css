@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
+  background-color: white;
 }
 
 .head {
@@ -43,7 +47,6 @@ body {
 
   color: #ffffff;
   opacity: 0;
-  
   pointer-events: none;
   display: flex;
   flex-direction: column;
@@ -111,10 +114,12 @@ body {
 /* Footer */
 
 footer.seccion {
-  margin-top: 60px;
-  padding: 25px;
-  background-color: #ffffff;
-  color: #ffffff;
+  margin-top: auto;
+  padding: 25px 0;
+  width: 100%;
+  object-fit: fill;
+  background-color: whitesmoke;
+  color: black;
 }
 
 

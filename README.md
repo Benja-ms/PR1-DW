@@ -25,7 +25,7 @@ Distribución de responsabilidades de cada integrante
 
     Benjamín Mardones
     
-        -Creación y refactorización de index.html.
+        -Creación y refactorización mayor de index.html.
         -Desarrollo inicial de la hoja de estilos style.css.
         -Creación y desarrollo de reservas_contacto.html.
         -Configuración de la tipografía utilizada en el proyecto.

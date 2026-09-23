@@ -16,10 +16,11 @@ Instrucciones para ejecutar o visualizar el sitio:
 Tecnologías utilizadas: HTML5, CSS3 y Bootstrap.
 
 Distribución de responsabilidades de cada integrante.
+
     Andres Chavez:
         -Creacion pestaña "panorama"
         -Correcciones e inconsistencias entre paginas
-        -Responsividad en CSS.
+        -Responsividad en CSS
 
     Benjamin Mardonez:
         -Fundacion de Bases del Github

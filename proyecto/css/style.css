@@ -19,7 +19,7 @@ body {
 }
 
 .body {
-  font-family: "Inter";
+  font-family: "jumbotron";
 }
 
 /* CONTENEDOR DE LAS CAJAS */
@@ -126,9 +126,8 @@ footer.seccion {
   padding: 25px 0;
   width: 100%;
   object-fit: fill;
-  background-color: whitesmoke;
-  color: black;
-  background-color: #7F945A;
+  color: whitesmoke;
+  background-color: #354024;
 }
 
 .thumbnail img {

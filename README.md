@@ -37,6 +37,7 @@ Algunas páginas como la de información son accesibles desde el enlace hallado 
         -Creacion pestaña "panorama"
         -Correcciones e inconsistencias entre paginas
         -Responsividad en CSS
+        -Paleta de colores.
 
     Benjamín Mardones
     

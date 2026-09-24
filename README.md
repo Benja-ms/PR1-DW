@@ -16,7 +16,7 @@ El sitio web es un sitio de viajes vacacionales llamado destino cordillera, el s
 1. Descargar o clonar el repositorio desde GitHub.
 2. Ingresar a la carpeta `proyecto`.
 3.  Abrir el archivo `index.html` en un navegador web.
-4- Utilizar la barra de navegación para acceder a las diferentes secciones del sitio:
+4.  Utilizar la barra de navegación para acceder a las diferentes secciones del sitio:
 
    * Inicio
    * Panoramas

@@ -18,10 +18,11 @@ El sitio web es un sitio de viajes vacacionales llamado destino cordillera, el s
 3.  Abrir el archivo `index.html` en un navegador web.
 4.  Utilizar la barra de navegación para acceder a las diferentes secciones del sitio:
 
-   * Inicio
-   * Panoramas
-   * Alojamiento y gastronomía
-   * Reserva y contacto
+       * Inicio
+       * Panoramas
+       * Alojamiento y gastronomía
+       * Reserva y contacto
+       * Información
      
 Algunas páginas como la de información son accesibles desde el enlace hallado en el footer de la página
 

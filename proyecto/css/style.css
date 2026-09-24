@@ -30,7 +30,18 @@ body {
   padding: 40px 30px;
 }
 
+.caption {
+  background-color: #e3eadb;
 
+}
+
+.thumbnail {
+  background-color: #e3eadb;
+}
+
+.container.well {
+  background-color: #e3eadb;
+}
 
 .texto-descripcion {
   background-color: #e3eadb;

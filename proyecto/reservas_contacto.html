@@ -365,10 +365,11 @@
     src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
   </script>
 
+  <!-- Para que no se recarge al enviar -->
   <script>
     function mostrarMensajeConfirmacion(event) {
 
-      event.preventDefault(); // para que no se recarge al enviar 
+      event.preventDefault();
       document.getElementById('mensaje-confirmacion').style.display = 'block';
 
     }

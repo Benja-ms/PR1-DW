@@ -22,6 +22,24 @@ body {
   font-family: "jumbotron";
 }
 
+.jumbotron {
+  background-color: #e3eadb;
+  color: #2c2c2c;
+  border-radius: 40px 40px 40px 40px;
+  margin: 0 25px 5px 25px;
+  padding: 40px 30px;
+}
+
+
+
+.texto-descripcion {
+  background-color: #e3eadb;
+  color: #2c2c2c;
+  border-radius: 40px 40px 40px 40px;
+  margin: 0 25px 30px 25px;
+  padding: 50px 20px;
+}
+
 /* CONTENEDOR DE LAS CAJAS */
 .container-box {
   display: grid;
@@ -36,6 +54,13 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.panel.panel-default.panel-fortaleza{
+  background-color: #e3eadb;
+  color: #2c2c2c;
+  border-radius: 15px 15px 15px 15px;
+  margin: 0 25px 30px 25px;
 }
 /* REPISA EN DONDE SE COLOCA LA INFORMACION */
 .image-box {
@@ -70,6 +95,7 @@ body {
 
 .item-box:hover .image-box {
   transform: scale(1.03);
+  filter: brightness(50%);
 }
 
 .item-box:hover .text-box {
@@ -138,6 +164,19 @@ footer.seccion {
 
 @media (max-width: 767px) {
 
+    .container-box {
+    grid-template-columns: 1fr;
+  }
+
+  .item-box {
+    width: 100%;
+  }
+
+  .image-box {
+    width: 100%;
+    height: auto;
+  }
+  
   .carrusel-principal {
     width: 100%;
     margin-top: 20px;

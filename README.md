@@ -49,6 +49,6 @@ Algunas páginas como la de información son accesibles desde el enlace hallado 
         -Creación de la página de informacion.html.
 
     Jesus Peña:
-        -
-        -
-        -
+        -Creacion y desarrollo de alojamiento_gastronomia.html
+        -Modificacion de reserva_contacto.html para que se pueda reservar alojamiento también.
+        -Modificacion de css para limitar el tamaño de las fotos

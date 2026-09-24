@@ -41,7 +41,7 @@ Algunas páginas como la de información son accesibles desde el enlace hallado 
 
     Benjamín Mardones
     
-        -Creación y refactorización mayor de index.html.
+        -Creación, desarrollo y refactorización mayor de index.html.
         -Desarrollo inicial de la hoja de estilos style.css.
         -Creación y desarrollo de reservas_contacto.html.
         -Configuración de la tipografía utilizada en el proyecto.
